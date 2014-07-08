@@ -1,15 +1,6 @@
 
-NoFlo & fabmodules
+Implementation notes
 ==================
-
-Goals
-----------------
-1. Enable building user interfaces for fabmodules using web technology
-2. Enable integrating fabmodules into larger automated workflows with other SW,
-including inputting custom CAD models, documentation/publishing
-3. Enable writing machine output modules in NoFlo/JS
-4. Enable writing toolpath generation modules in NoFlo/JS
-
 
 Each fab-module is generally a separate program, that takes
 input and output file paths and a set of parameters as arguments.
@@ -30,7 +21,6 @@ Also for deleting temporary files.
 Proof-of-concept
 -----------------
 * Mill a PCB from .eagle file using Roland Modela MBX-15?
-
 
 
 Opening up fabmodules
@@ -89,4 +79,17 @@ Grbl project is also interesting
 * http://zapmaker.org/projects/grbl-controller-3-0/
 * https://github.com/tmpvar/node-grbl
 
+
+Missing fab components
+=========================
+
+Machine control/sender for Shopbot
+-------------------------------
+From the [driver page](http://www.shopbottools.com/msupport/drivers.htm) it looks like
+some older machines used USB-to-serial device. Should be easy to reverse.
+
+Code generator/sender for GCC laser cutters
+-------------------------------
+It seems that there is no open code for generating code for the GCC machines.
+Hopefully the machine itself talks [HPGL](http://en.wikipedia.org/wiki/HPGL)
 

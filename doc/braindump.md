@@ -86,10 +86,15 @@ Missing fab components
 Machine control/sender for Shopbot
 -------------------------------
 From the [driver page](http://www.shopbottools.com/msupport/drivers.htm) it looks like
-some older machines used USB-to-serial device. Should be easy to reverse.
+some older machines used USB-to-serial device. If the case, should be easy to reverse.
+
+[http://www.linuxcnc.org/index.php/english/forum/30-cnc-machines/18385-shopbot-system-conversion](Discussion on converting Shopbot)
+[http://www.talkshopbot.com/forum/showthread.php?t=22](Discussion on alternative OSes for Shopbot)
 
 Code generator/sender for GCC laser cutters
 -------------------------------
 It seems that there is no open code for generating code for the GCC machines.
-Hopefully the machine itself talks [HPGL](http://en.wikipedia.org/wiki/HPGL)
+Hopefully the machine itself talks [HPGL](http://en.wikipedia.org/wiki/HPGL).
+If one can convince the existing driver to output to a file instead of to the printer,
+should be easy to reverse. 
 
